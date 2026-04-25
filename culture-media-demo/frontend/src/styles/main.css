@@ -1,0 +1,40 @@
+:root {
+  --primary: #0ea5a6;
+  --text: #1f2937;
+  --bg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'PingFang SC', 'Microsoft Yahei', sans-serif; color: var(--text); background: var(--bg); }
+a { text-decoration: none; color: inherit; }
+.container { width: min(1200px, 92%); margin: 0 auto; }
+.section { padding: 40px 0; }
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.grid-5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.card { background:#fff; border-radius:12px; padding:16px; box-shadow:0 6px 20px rgba(15,23,42,.06); }
+
+.site-header { position: sticky; top:0; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.05); z-index:10; }
+.nav-wrap { display:flex; justify-content:space-between; align-items:center; height:64px; }
+.brand { font-weight:700; color:#0f172a; }
+nav a { margin-left:18px; color:#334155; }
+nav a.router-link-active { color: var(--primary); font-weight:600; }
+.banner { background:linear-gradient(135deg,#0f172a,#0ea5a6); color:#fff; padding:90px 0; }
+.banner h1 { font-size:40px; margin:0 0 12px; }
+.banner p { max-width:760px; opacity:.95; }
+.btn { display:inline-block; margin-top:16px; padding:10px 18px; border-radius:999px; background:#fff; color:#0f172a; font-weight:700; }
+.case-card { cursor:pointer; }
+.case-card img, .detail-cover { width:100%; height:180px; object-fit:cover; border-radius:10px; }
+.advantage ul { line-height:2; }
+.site-footer { background:#0f172a; color:#cbd5e1; padding:20px 0; margin-top:40px; }
+.prose p { line-height:1.9; }
+.detail-content { white-space:pre-wrap; line-height:1.8; background:#fff; padding:12px; border-radius:8px; }
+.filter-bar { margin:12px 0 18px; }
+
+.login-page { height:100vh; display:flex; justify-content:center; align-items:center; background:linear-gradient(120deg,#dbeafe,#ccfbf1); }
+.login-card { width:420px; }
+.tip { color:#64748b; font-size:12px; margin-top:8px; }
+.admin-layout { min-height:100vh; }
+.admin-side { background:#0f172a; }
+.logo { color:#fff; font-weight:700; text-align:center; padding:20px; }
+.admin-header { display:flex; justify-content:space-between; align-items:center; background:#fff; border-bottom:1px solid #e2e8f0; }
